@@ -27,6 +27,9 @@ ws.addEventListener('message', (message) => {
  }
  
  let data = JSON.parse(message.data);
-
+ if('slider1' in data){
+    let val = data['slider1'];
+    console.log('val' val)
+ }
   console.log(data);
 });
