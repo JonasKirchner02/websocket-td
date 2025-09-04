@@ -21,5 +21,12 @@ ws.addEventListener("open", (event) => {
 
 // Listen for messages
 ws.addEventListener("message", (event) => {
-  console.log("Message from server ", event.data);
+ if(message.data =='ping'){
+    ws.send('pong');
+    return
+ }
+ 
+ let data = JSON.parse(message.data);
+
+  console.log(data);
 });
