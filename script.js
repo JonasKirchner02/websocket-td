@@ -20,7 +20,7 @@ ws.addEventListener("open", (open) => {
 });
 
 // Listen for messages
-ws.addEventListener("message", (message) => {
+ws.addEventListener('message', (message) => {
  if(message.data =='ping'){
     ws.send('pong');
     return
