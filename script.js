@@ -1,5 +1,5 @@
 // Create WebSocket connection.
-const socket = new WebSocket("ws://localhost:8080");
+const socket = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
 
 let controlTD = document.querySelector('.controllTD')
 
