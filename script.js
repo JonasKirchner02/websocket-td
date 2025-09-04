@@ -1,4 +1,4 @@
-import json
+
 
 // Create WebSocket connection.
 let ws = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
