@@ -6,7 +6,9 @@ let controlTD = document.querySelector('.controllTD')
 
 
 controlTD.addEventListener('input', (event) => {
-  console.log(controlTD.value)
+  console.log(controlTD.value);
+  ws.send(JSON.stringify({'slider1': controlTD.value}))
+
 });
 
 
