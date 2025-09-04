@@ -5,7 +5,7 @@ let controlTD = document.querySelector('.controllTD')
 
 
 
-controllTD.addEventListener('input', (event) => {
+controlTD.addEventListener('input', (event) => {
 console.log(controllTD.value)
 });
 
