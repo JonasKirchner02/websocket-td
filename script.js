@@ -30,7 +30,7 @@ ws.addEventListener('message', (message) => {
  let data = JSON.parse(message.data);
  if('slider1' in data){
     let val = data['slider1'];
-    controlledByTD.value = val;
+    controlledByTD.value = val*100;
    
  }
   console.log(data);
