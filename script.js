@@ -15,11 +15,11 @@ controlTD.addEventListener('input', (event) => {
 
 
 // Connection opened
-socket.addEventListener("open", (event) => {
-  socket.send("Hello Server!");
+ws.addEventListener("open", (event) => {
+  ws.send("Hello Server!");
 });
 
 // Listen for messages
-socket.addEventListener("message", (event) => {
+ws.addEventListener("message", (event) => {
   console.log("Message from server ", event.data);
 });
