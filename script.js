@@ -3,10 +3,11 @@
 // Create WebSocket connection.
 let ws = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
 
-let controlTD = document.querySelector('.controllTD')
+
+let controlledByTD = document.querySelector('.controlledByTD');
 
 
-
+let controlTD = document.querySelector('.controllTD');
 controlTD.addEventListener('input', (event) => {
   console.log(controlTD.value);
   ws.send(JSON.stringify({'slider1': controlTD.value / 100.0}))
@@ -29,7 +30,8 @@ ws.addEventListener('message', (message) => {
  let data = JSON.parse(message.data);
  if('slider1' in data){
     let val = data['slider1'];
-    console.log('val' val)
+    controlledByTD.value = val;
+   
  }
   console.log(data);
 });
