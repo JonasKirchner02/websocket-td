@@ -15,12 +15,12 @@ controlTD.addEventListener('input', (event) => {
 
 
 // Connection opened
-ws.addEventListener("open", (event) => {
+ws.addEventListener("open", (open) => {
   ws.send("Hello Server!");
 });
 
 // Listen for messages
-ws.addEventListener("message", (event) => {
+ws.addEventListener("message", (message) => {
  if(message.data =='ping'){
     ws.send('pong');
     return
