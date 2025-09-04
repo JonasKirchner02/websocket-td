@@ -1,7 +1,7 @@
 import json
 
 // Create WebSocket connection.
-const socket = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
+let ws = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
 
 let controlTD = document.querySelector('.controllTD')
 
