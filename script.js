@@ -3,7 +3,7 @@ import {Pane} from "tweakpane";
 
 let ws = new WebSocket("wss://websockets-td-c8a685041ad6.herokuapp.com:443");
 
-const pane = new Pane();
+const pane = new Tweakpane.Pane();
 window.pane = pane;
 
 let project = {}; //Contains TD's Data format to be sent back
