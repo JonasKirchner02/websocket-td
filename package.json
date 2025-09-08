@@ -1,17 +1,18 @@
 {
-  "name": "vite-starter",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "A template for HTML and CSS",
+  "main": "index.html",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "serve"
   },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
   "devDependencies": {
-    "vite": "^4.0.3"
-  },
-  "dependencies": {
-    "tweakpane": "^3.1.1"
+    "serve": "11.2.0"
   }
 }
